@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header{
+    min-height: 100vh;
+    width: 100%; 
+    font-size: 16px;
+    color: #fff;
+    background: repeating-linear-gradient(
+  to right,
+  #eb1d1d,
+  #eb1d1d 10px,
+  #ffd180 10px,
+  #ffd180 20px);
+  position: relative;
+  font-family: 'Oxygen', sans-serif;
+}
+
+nav{
+    width: 95%;
+    background-color: #ffd180;
+    margin-left: auto;
+    margin-right: auto;
+     display: flex;
+    justify-content: space-between;
+}
+.h1-logo{
+    margin-top: 20px;
+}
+nav h1 {
+    text-transform: uppercase;
+    color: #175a10;
+    text-shadow: 1px 1px 1px #1e4d19;
+}
+span>img{
+    width: 25px;
+    height: 25px;
+    float: left;
+    align-items: center;
+    margin-top: 10px;
+}
+.spicy>p{
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-top: 15px;
+    color: #175a10;
+    
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px ;
+    position: relative;
+    margin-top: 25px;
+    
+   
+}
+.nav-links ul li a{
+    color: #175a10;
+    text-decoration:none ;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #eb1d1d;
+    display: block;
+    margin: auto;
+     transition: 0.3s;
+    }
+#tel p{
+    margin-top: 45px;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.main-image{
+    width: 90%;
+    background-color: #eb1d1d;
+    text-align: center;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+.main-image>img{
+    width: 70%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    
+    
+}
+.coulmn{
+    
+    widows: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+nav .fas{
+     display: none;}
+
+.row {
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+@media (max-width : 1200px){
+    .nav-links ul li{
+        display: block;
+    }
+    .h1-logo{
+       margin-left:-34%;
+       margin-top: 10px;
+               
+    }
+    .nav-links{
+        position: absolute;
+        background: #ffd180;
+        width: 200px;
+        height: 100vh;
+        top:0;
+        right:-200px;
+        text-align: center;
+        z-index: 2;
+        
+    }
+    .main-image>img{
+        width:350px;
+        height: 233px;
+    }
+    .coulmn{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .row{
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo-img{
+        display: none;
+    }
+    nav .fas{
+        display: block;
+        color: #175a10;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+

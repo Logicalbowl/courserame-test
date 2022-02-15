@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Bistro</title>
+<!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+    
+  </head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><div class="logo-img"><img src="./img/logo.jfif"></div></a>
+      <div class="h1-logo"><h1 class="head-logo">David Totti's Italy bistro</h1>
+        <span class="spicy"><img src="img/chili.png"><p>extra spicey</span></div>
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">Menu</a></li>
+        <li><a href="tel:44488850">44488850</a></i></li></ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div id="main-content">
+      <div class="main-image" >
+        <img src="img/main photo 768.jpg" alt="main photo">
+      </div>
+      <div class="coulmn"> 
+      <div class="row">
+        <img src="img/pexels-elevate-1267320.jpg" alt="">
+      </div>
+      <div class="row">
+        <img src="img/pexels-pixabay-262978.jpg" alt="">
+      </div>
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45610.20118322503!2d26.0207850128537!3d44.39956102535844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ffeced4e89bb%3A0x5dcf14631cf59cbe!2sRahova%2C%20Bucharest%2C%20Romania!5e0!3m2!1sen!2sua!4v1644948412372!5m2!1sen!2sua" width="350" height="233" style="border:0;" allowfullscreen="" loading="lazy"></iframe> </div>    </div>
+    </div>
+
+    </div>
+
+  </section>
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right='0';
+    }
+    function hideMenu(){
+      navLinks.style.right="-200px"
+    }
+  </script>
+ 
+
+</body>
+</html>
